@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: {{ .Values.deployment.repository.image }}:1.0
+        image: {{ .Values.deployment.repository.image }}:{{ .Values.deployment.repository.tag }}
         ports:
         - containerPort: {{ .Values.deployment.port }}
 
